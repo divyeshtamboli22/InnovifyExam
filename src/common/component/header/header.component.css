@@ -1,0 +1,10 @@
+li:hover {
+    cursor: pointer;
+}
+
+.header{
+
+    padding: 5px 5px 5px 5px;
+    background-color: rgb(228, 228, 228);
+
+}

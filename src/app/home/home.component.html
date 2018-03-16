@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+            <h5 class="lefttitletext text-center"> Welcome, {{user.firstName}} {{user.lastName}}</h5>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2 col-left">
+            <div class="text-left">
+            <br>
+                <img data-toggle="modal" class="img-thumbnail img-responsive center-block" *ngIf="user.avatar" [src]="user.avatar">
+            </div>
+            
+        </div>
+        <div class="col-md-6 text-left" >
+            <br>
+            <p><b>Name:</b>{{user.firstName}} {{user.lastName}}</p>
+                <p>
+                    <b>Email :</b> {{user?.email}}
+                </p>
+    
+                <p>
+                    <b>Mobile :</b> {{user?.mobile}}
+                </p>
+    
+                <p>
+                    <b>Date Of Birth :</b> {{user?.dateOfBirth}}
+                </p>
+                <p>
+                    <b>Address :</b> {{user?.address}}
+                </p>
+               
+    
+            </div>
+        
+    </div>
+    
+    <div class="row">
+        
+        
+    </div>
+     
+</div>

@@ -1,0 +1,28 @@
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.text-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header{
+    color : #808080;
+    margin-left:10%;
+    margin-top:70px;
+}
+
+.lefttitletext{
+   
+    margin-left: 5px;
+    
+    
+}
+
+div p{ margin-bottom: 8px !important;
+
+
+}

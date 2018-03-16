@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    Innovify Demo
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li [routerLinkActive]="['active']" *ngIf="authService.userLoggedIn()">
+        <a class="nav-link" [routerLink]="['/home']">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']" *ngIf="!authService.userLoggedIn()">
+        <a class="nav-link" [routerLink]="['/signin']">Signin</a>
+      </li>
+
+      <li class="nav-item" [routerLinkActive]="['active']" *ngIf="!authService.userLoggedIn()">
+        <a class="nav-link" [routerLink]="['/signup']">Signup</a>
+      </li>
+
+      <li class="nav-item" (click)="logout()" [routerLinkActive]="['active']" *ngIf="authService.userLoggedIn()">
+        <a class="nav-link" >Logout</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+<app-header></app-header>
+<router-outlet></router-outlet>
+<app-footer></app-footer>

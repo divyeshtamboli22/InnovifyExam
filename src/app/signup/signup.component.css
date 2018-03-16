@@ -1,0 +1,27 @@
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.err-msg{
+color:#FF4500;
+font-size: 14px;
+}
+
+label {
+    font-size: 16px;
+    color:rgb(0, 0, 0);
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+.text-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
