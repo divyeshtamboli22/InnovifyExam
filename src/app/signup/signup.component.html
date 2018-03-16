@@ -30,7 +30,7 @@
       <form novalidate [formGroup]="signUpForm" (ngSubmit)="submit()">
 
         <div class="text-center">
-          <img *ngIf="!data.image" src="./assets/dummyavatar.png" class="img-thumbnail img-responsive center-block" alt="Cinque Terre" data-toggle="modal"
+          <img *ngIf="!data.image" src="/assets/pic.png " class="img-thumbnail img-responsive center-block" alt="Cinque Terre" data-toggle="modal"
             data-target="#exampleModal">
           <img data-toggle="modal" data-target="#exampleModal" class="img-thumbnail img-responsive center-block" *ngIf="data.image"
             [src]="data.image" [width]="cropperSettings.croppedWidth" [height]="cropperSettings.croppedHeight">
